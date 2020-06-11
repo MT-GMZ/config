@@ -21,6 +21,8 @@ spring:
     host: 127.0.0.1
     port: 6379
     database: 0
+server: 
+  port: 129
 hystrix: 
   command: 
     default: 
@@ -30,6 +32,12 @@ hystrix:
             timeoutInMilliseconds: 5000
         timeout: 
           enabled: true
+eureka: 
+  client: 
+    serviceurl: 
+      defaultZone: "http://127.0.0.1:81/eureka"
+  instance:
+    prefer-ip-address: true
 
 ribbon:
   ConnectTimeout: 3000
@@ -45,13 +53,3 @@ logging:
 feign: 
   hystrix: 
     enabled: true
-    
-server:
-  port: 130
-
-eureka:
-  client:
-    serviceurl:
-      defaultZone: "http://127.0.0.1:81/eureka"
-  instance:
-    prefer-ip-address: true
