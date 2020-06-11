@@ -47,7 +47,7 @@ feign:
     enabled: true
     
 server:
-  port: 129
+  port: 130
 
 eureka:
   client:
