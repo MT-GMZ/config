@@ -40,3 +40,14 @@ curator:
 tx-lcn:
   client:
     manager-address: 127.0.0.1:8070
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: false
