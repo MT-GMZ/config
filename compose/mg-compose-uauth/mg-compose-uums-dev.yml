@@ -2,7 +2,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application: 
-    name: mg-compose-uauth
+    name: mg-compose-uums
   session: 
     timeout: 3600s
     redis: 
@@ -48,7 +48,7 @@ ribbon:
 logging: 
   level: 
     root: info
-  file: ../mg.log/mg.compose.uauth.log
+  file: ../mg.log/mg.compose.uums.log
 feign: 
   hystrix: 
     enabled: true
