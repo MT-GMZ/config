@@ -38,3 +38,20 @@ eureka:
       defaultZone: "http://127.0.0.1:81/eureka"
   instance:
     prefer-ip-address: true
+
+ribbon:
+  ConnectTimeout: 3000
+  MaxAutoRetriesNextServer: 1
+  MaxAutoRetries: 1
+  ReadTimeout: 3000
+  OkToRetryOnAllOperations: false
+logging: 
+  level: 
+    root: info
+  file: /mg.log/mg.website.uauth.log
+#  config: classpath:logback-spring.xml
+feign: 
+  hystrix: 
+    enabled: true
+
+manager
