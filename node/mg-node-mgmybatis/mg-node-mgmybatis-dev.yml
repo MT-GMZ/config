@@ -17,8 +17,8 @@ server:
   port: 1180
 logging: 
   level: 
-    root: info
-  file:  ../mg.log/mg.node.user.log
+    root: debug
+  file:  ../mg.log/mg.node.mgmybatis.log
 mg:
   version: 20200520
 eureka: 
