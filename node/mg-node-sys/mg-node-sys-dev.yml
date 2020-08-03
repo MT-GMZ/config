@@ -27,9 +27,7 @@ eureka:
       defaultZone: "http://127.0.0.1:81/eureka"
   instance:
     prefer-ip-address: true
-mybatis:
-  mapperlocations: "classpath:com/mg/node/db/sql/xml/*.xml"
-
+    
 curator:
   retryCount: 5  #重试次数
   elapsedTimeMs: 5000   #重试间隔时间
