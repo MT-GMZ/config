@@ -17,7 +17,7 @@ server:
   port: 11001
 logging: 
   level: 
-    root: info
+    root: debug
   file:  ../mg.log/mg.node.sys.log
 mg:
   version: 20200520
