@@ -2,7 +2,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application: 
-    name: mg-website-uauth
+    name: mg-website-deploy
   session: 
     timeout: 3600s
     redis: 
@@ -22,7 +22,7 @@ spring:
     port: 6379
     database: 0
 server: 
-  port: 13001
+  port: 13002
 hystrix: 
   command: 
     default: 
@@ -48,7 +48,7 @@ ribbon:
 logging: 
   level: 
     root: info
-  file: ../mg.log/website/uauth/mg.website.uauth.log
+  file: ../mg.log/website/deploy/mg.website.deploy.log
 #  config: classpath:logback-spring.xml
 feign: 
   hystrix: 
