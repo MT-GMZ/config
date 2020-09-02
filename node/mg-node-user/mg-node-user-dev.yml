@@ -11,10 +11,10 @@ spring:
   datasource: 
     password: shineon@1234
     driverclassname: com.mysql.jdbc.Driver
-    url: "jdbc:mysql://127.0.0.1:3306/rmt_sys_uia_info?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+    url: "jdbc:mysql://127.0.0.1:3306/mg.frame.user?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     username: root
 server: 
-  port: 121
+  port: 11002
 logging: 
   level: 
     root: info
@@ -24,7 +24,7 @@ mg:
 eureka: 
   client: 
     serviceurl: 
-      defaultZone: "http://127.0.0.1:81/eureka"
+      defaultZone: "http://127.0.0.1:15101/eureka"
   instance:
     prefer-ip-address: true
 mybatis:

@@ -2,7 +2,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application: 
-    name: mg-compose-uums
+    name: mg-compose-auth
   session: 
     timeout: 3600s
     redis: 
@@ -22,7 +22,7 @@ spring:
     port: 6379
     database: 0
 server: 
-  port: 122
+  port: 12005
 hystrix: 
   command: 
     default: 

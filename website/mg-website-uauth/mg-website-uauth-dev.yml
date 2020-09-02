@@ -22,7 +22,7 @@ spring:
     port: 6379
     database: 0
 server: 
-  port: 129
+  port: 13001
 hystrix: 
   command: 
     default: 
@@ -35,7 +35,7 @@ hystrix:
 eureka: 
   client: 
     serviceurl: 
-      defaultZone: "http://127.0.0.1:81/eureka"
+      defaultZone: "http://127.0.0.1:15101/eureka"
   instance:
     prefer-ip-address: true
 
