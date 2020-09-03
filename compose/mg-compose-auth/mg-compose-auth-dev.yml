@@ -40,10 +40,10 @@ eureka:
     prefer-ip-address: true
 
 ribbon:
-  ConnectTimeout: 3000
+  ConnectTimeout: 10000
   MaxAutoRetriesNextServer: 1
   MaxAutoRetries: 1
-  ReadTimeout: 3000
+  ReadTimeout: 10000
   OkToRetryOnAllOperations: false
 logging: 
   level: 
