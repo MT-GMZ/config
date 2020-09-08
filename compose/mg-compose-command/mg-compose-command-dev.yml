@@ -21,6 +21,20 @@ spring:
     host: 127.0.0.1
     port: 6379
     database: 0
+  cloud:
+    stream:
+      bindings:
+        MataoMessageOutput:
+          destination: MataoMessage
+        MataoMessageInput:
+          destination: MataoMessage
+  rabbitmq:
+    addresses: 127.0.0.1
+    password: matao
+    publisherconfirms: true
+    port: 5672
+    username: matao
+
 server: 
   port: 12001
 hystrix: 
