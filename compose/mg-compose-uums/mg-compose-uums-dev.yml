@@ -22,7 +22,7 @@ spring:
     port: 6379
     database: 0
 server: 
-  port: 122
+  port: 12003
 hystrix: 
   command: 
     default: 

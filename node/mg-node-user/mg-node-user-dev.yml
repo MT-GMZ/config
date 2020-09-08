@@ -14,7 +14,7 @@ spring:
     url: "jdbc:mysql://127.0.0.1:3306/mg.frame.user?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     username: root
 server: 
-  port: 11002
+  port: 11005
 logging: 
   level: 
     root: info

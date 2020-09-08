@@ -18,7 +18,7 @@ spring:
     port: 6379
     database: 0
 server: 
-  port: 11001
+  port: 11003
 logging: 
   level: 
     root: info
